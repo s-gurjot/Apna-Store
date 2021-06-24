@@ -1,0 +1,110 @@
+/* media query for screen size less than 625 px*/
+
+@media only screen and (max-width:625px)
+{
+    #footer-1, #footer-2, #footer-3, #footer-4
+    {
+        flex-basis:50%;
+        text-align:center;
+    }
+
+    .box div
+    {
+        flex-basis:100%;
+        margin:25px 0;
+    }
+    .box div img
+    {
+        width:60%;
+    }
+    .box div:hover
+    {
+        transform:none;
+    }
+
+}
+
+/* MEDIA QUERY FOR THE PRODUCTS IMAGES */
+
+@media only screen and (max-width:900px) and (min-width:625px)
+
+{
+   /* NO NEED FOR MEDIA QUERY IF YOU GIVE WIDTH TO DIV IN PX, SO FLEX-WRAP:WRAP PROPERTY WILL WRAP THE ELEMENTS  */
+    .box div
+    {
+        flex-basis:50%;
+        margin:25px 0;
+    }
+    .box div img
+    {
+        width:70%;
+    }
+    .box div:hover
+    {
+        transform:none;
+    }
+}
+
+
+/*--- media query for menu  */
+
+@media only screen and (max-width:800px)
+{
+    #list
+    {
+          display:flex;
+          flex-direction:column;
+          align-items: center;
+          flex-wrap: wrap;
+          position:absolute;
+          top:75px;
+          right:-13%;
+          background:#333;
+          overflow:hidden;/* ul will be hidden when we unclick it*/
+          transition:maxHeight 0.5s;
+    }
+
+
+    #icon-1
+    {
+    margin:11px 2.5rem;
+    position:fixed;
+    }
+
+    #icon-2
+    {
+        display:inline-block;
+        position:fixed;
+        cursor: pointer;
+    }
+}
+
+/* media query for the offers section */
+@media only screen and (max-width:710px)
+{
+    .offer div
+    {
+       width:90%;
+    }
+}
+
+/* media query for the main background image*/
+
+@media only screen and (max-width:879px)
+{
+    .row
+{
+    flex-basis: 100%;
+    align-items:center;
+}
+
+#main-section
+{
+   justify-content:center;
+}
+#main-section img
+{
+    width:100%;
+    padding-bottom:2rem;
+}
+}

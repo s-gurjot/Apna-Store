@@ -1,0 +1,491 @@
+*
+{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+::before , ::after
+{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+  
+:root
+{
+    --org:#e67e22;
+    --main_color:#baccbc75;
+}
+
+html
+{
+scroll-behavior:smooth;
+}
+
+/*-----------------NAVIGATION MENU-------------- */
+
+ .navbar
+{
+     
+     display:flex;
+     padding:20px;
+     align-items:center;
+     justify-content: space-between;
+     background: black;
+     height:75px;
+     position: fixed;
+     width: 100vw;
+     z-index:2; /*so that the scale images doesn't get shown over it */
+}
+
+#list 
+{
+    display:flex;
+    list-style-type: none;
+    justify-content:flex-end;
+    align-items:center;
+    margin-right: 13%;  
+}
+
+#list li a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right:1rem;
+    font-size: 1.3rem;
+    color:white;
+  }
+
+#list li a:hover
+{ 
+    border-bottom:3px solid #e06f0b;
+}
+.menu-img
+{
+    width: 33px;
+    height: 30px;
+}
+
+#icon-1
+{
+    position:absolute;
+    position:fixed;
+    top:13px;
+    right:1%;
+    margin:11px 0.5rem;
+    z-index:3; /*so that shown over navbar */
+}
+#icon-2
+{
+    position:absolute;
+    top:13px;
+    right:0%;
+    margin:8px 1rem;
+    /* hidden when in full screen */
+    display:none;
+    z-index:3; /*so that shown over navbar */
+
+}
+.fas.fa-shopping-cart
+{
+    padding-right:10px;
+}
+/*------------------------------------ Main Section -------------------------------*/
+
+#main-section
+{
+   display:flex;
+   flex-wrap:wrap; 
+   justify-content: center;
+   position: relative; /* so as the ::before pseudo selector works properly */
+   padding-top:rem;
+}
+
+#main-section::before
+{
+    content:' ';
+    position:absolute;
+    height:105%;
+    width:100%;
+    background-color: var(--main_color);
+    z-index:-2;
+}
+
+#main-section img
+{
+    padding-top:5rem;
+    padding-left:1rem;
+    width:80%;
+}
+.row
+{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items:center;
+    padding-top: 4rem; 
+    margin-top:1.9rem;
+    padding-left:2rem;
+    flex-basis:50%;
+}
+
+/*.row::before
+{
+    content:' ';
+    position:absolute;
+    height:70%;
+    width:59%;
+
+    background-image:url('images/image1.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: right;
+
+    z-index:-1;
+    top:15%;
+    left:40%;
+}
+
+*/
+
+.row h1
+{
+    line-height: 60px;
+    margin:2rem 0;
+    font-family: 'Roboto', sans-serif;
+} 
+
+.btn
+{
+    height:50px;
+    width:200px;
+    margin:20px 0;
+    padding:8px 30px;
+    border-radius: 30px;
+  
+    background-color:var(--org);
+    text-align:center;
+
+}
+.btn:hover{
+    background:#aa5911;
+    color:white;
+}
+
+/*-------------- Featured Category------------- */
+
+.category
+{
+    margin-top:50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.category div
+{
+    width:280px;
+    margin:1rem 1.8rem 0.5rem;  
+    padding:10px 0;
+}
+.category img
+{
+    width:100%;   
+}
+
+/* -------------FEATURED PRODUCTS--------------*/
+.featured_products
+{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.box
+{
+    margin-top:50px;
+    display:flex;
+    justify-content:center;
+   /* align-items:center;*/
+    flex-wrap:wrap;
+    
+}
+.box div
+{
+    
+  /*  width:18%;  this i have changed */  
+  flex-basis:18%;
+    cursor: pointer;
+    transition:tranform 0.5s;
+    margin:10px 0px;
+
+    /* Making inside items of div as flex again */
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:center;
+    padding:0 30px;
+}
+.box div img
+{
+    width:80%;
+}
+.box div:hover
+{
+    
+    transform: translateY(-5px);
+    transform: scale(1.2);
+}
+
+
+/*---------------OFFER SECTION---------*/
+.offer
+{
+    margin-top:30px;
+    margin-bottom: 30px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items:center;
+    background-color: var(--main_color);
+}
+.offer div
+{
+    width:43%;
+    margin:10px 10px;
+
+    /* Make items inside div as flex*/
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    align-items:center;
+}
+#offer_img img
+{
+    padding-top: 30px;
+    width:80%;
+}
+#offer_img
+{
+    transition:transform 1s;
+}
+#offer_img:hover
+{
+    transform:skew(5deg);
+    transform: scale(1.1);
+}
+
+/*-------- TESTIMONIAL SECTION------*/
+
+.col-3
+{
+    margin-top:30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-3 div
+{
+    width:350px;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items:center;
+    margin-left:1rem;
+    margin-right:1rem;
+    margin-top:1rem;
+    padding:0 30px;
+}
+
+#testimonial img
+{
+    border-radius:50%;
+    width:100px;
+   /* margin-left:35%; */
+}
+.col-3 div
+{
+       box-shadow: 0 0 20px 0 #80d29475;
+       cursor:pointer;
+}
+#testimonial p
+{
+    padding:10px;
+}
+
+.fas.fa-angle-double-right
+{
+    /* i tag is treated as text */
+    display:inline-block;  /* as we can't add vertical margins to inline elements like <i> tag  */
+    padding-top: 18px; 
+    font-size: 30px;
+    /*padding-left:45%; */
+    color:blue;
+}
+
+/*--------------CLIENT SECTION-----------------*/
+#clients
+{
+    margin-top:30px;
+}
+ 
+.col-5
+{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(15%,1fr));
+    grid-gap:10px 10px;
+}
+
+.col-5 img
+{
+    width:100%;
+    padding:5px 10px; 
+    filter:grayscale(100%);
+    cursor: pointer;
+}
+.col-5 img:hover
+{
+    filter:grayscale(0);
+}
+
+/*-----------FOOTER SECTION-----------*/
+
+#footer
+{
+    margin-top:30px;
+    background:black;
+    color:white;
+}
+
+.col-4
+{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.col-4 div
+{
+    margin:10px 15px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    flex-wrap:wrap;
+}
+#footer-1
+{
+   flex-basis:20%;
+  
+}
+#footer-2
+{
+    flex-basis:30%;
+}
+
+#footer-3, #footer-4
+{
+    flex-basis:12%;
+}
+#footer-1 img
+{
+    width:50%;
+    border-radius: 10px;
+}
+#footer-2 img
+{
+    width:20%;
+}
+#footer ul
+{
+    list-style-type: none;
+}
+
+
+
+/* utility class */
+.h-primary
+{
+    font-size:3rem;
+    font-weight: bolder;
+}
+.h-secondary
+{
+    font-size:1.2rem;
+    
+}
+.center
+{
+    text-align:center;
+    
+}
+.orange
+{
+    color:#e67e22;
+}
+i
+{
+    color:goldenrod;
+  
+}
+.border
+{
+    border-bottom:3px solid var(--org);
+    width:30%;
+    margin:auto;
+    border-radius:5px;
+}
+.padding
+{
+    padding-left:10%;
+}
+
+
+/*--------- For the products page       */
+#products_p
+{
+    padding-top:90px;
+}
+select
+{
+    border:1px solid var(--org);
+    padding:5px;  
+    align-content:flex-end;
+}
+select:focus
+{
+    outline:none;/* See this */
+}
+.col-2
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.page-btn
+{
+    margin-top:50px;
+    margin-left:10%;
+}
+.page-btn span
+{
+    display:inline-block;
+    border:2px solid brown;
+    margin-left:10px;
+    width:40px;
+    height:40px;
+    text-align:center;
+    line-height:40px;
+    cursor:pointer;
+    transition: all,1s;
+}
+.page-btn span:hover
+{
+    background-color: black;
+    color:white;
+}

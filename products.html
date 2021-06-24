@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Apna Store</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="phone.css">
+    
+    <link rel="shortcut icon" href="New icons/logo.png" type="image/x-icon">
+
+
+    <!-- font awesome url-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+        <section class="navbar">
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo_transparent.png" width=125px id="main-logo">
+                </a>
+
+            </div>
+
+            <nav>
+                <ul id="list">
+
+                    <li class="list-items">
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li class="list-items">
+                        <a href="#">Products</a>
+                    </li>
+                    <li class="list-items">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="list-items">
+                        <a href="#">Contact</a>
+                    </li>
+                    <li class="list-items">
+                        <a href="#">Account</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </section>
+
+        <span id="icon-1">
+            <i class="fas fa-shopping-cart"></i>
+        </span>
+        <span id="icon-2" onclick="fun()">
+            <img src="images/icons8-menu-100.png" class="menu-img">
+        </span>
+
+
+    
+
+
+
+    <!-- FEATURED PRODUCTS-->
+
+    <section class="featured_products" id="products_p">
+
+        <div class="col-2">
+            <h2 class="h-primary orange center">All Products</h2>
+            <select class="center">
+                <option>Default Sorting</option>
+                <option>Sort by Price</option>
+                <option>Sort by Popularity</option>
+                <option>Sort by rating</option>
+                <option>Sort by Sale</option>
+    
+            </select>
+    
+        </div>
+        
+        <div class="box">
+
+            <div>
+                <img src="images/product-1.jpg">
+                <p>RED T-Shirt</p>
+                <span class="rate_1">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                </span>
+
+
+                <p>Rs.400</p>
+            </div>
+
+            <div>
+                <img src="images/product-2.jpg">
+                <p">HRX Shoes</p>
+                    <span class="rate_1">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+
+                    <p>Rs.4000</p>
+
+            </div>
+
+            <div>
+                <img src="images/product-3.jpg">
+                <p>Black Pant</p>
+
+                <span class="rate_1">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+
+                </span>
+                <p class="center">Rs.700</p>
+
+            </div>
+
+            <div>
+                <img src="images/product-4.jpg">
+                <p>PUMA T-Shirt</p>
+                <span class="rate_1">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                </span>
+
+                <p>Rs.600</p>
+            </div>
+        </div>
+
+        <div class="box">
+
+            <div>
+                <img src="images/product-5.jpg">
+                <p>Puma Shoes</p>
+                <span class="rate_1">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                </span>
+
+
+                <p>Rs.2500</p>
+            </div>
+
+            <div>
+                <img src="images/product-6.jpg">
+                <p>Black T-shirt</p>
+                <span class="rate_1">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+
+                <p>Rs.800</p>
+
+            </div>
+
+            <div>
+                <img src="images/product-7.jpg">
+                <p>HRX Socks</p>
+
+                <span class="rate_1">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+                <p>Rs.200</p>
+
+
+            </div>
+
+            <div>
+                <img src="images/product-8.jpg">
+                <p>Fossil Watch</p>
+                <span class="rate_1">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                </span>
+
+                <p>Rs.6000</p>
+            </div>
+        </div>
+        <div class="box">
+            <div>
+                <img src="images/product-9.jpg">
+                <p>Roadster Watch</p>
+                <span class="rate_1">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                </span>
+
+
+                <p>Rs.2000</p>
+            </div>
+            <div>
+                <img src="images/product-10.jpg">
+                <p>Sports Shoes</p>
+                <span class="rate_1">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+
+                <p>Rs.2500</p>
+            </div>
+            <div>
+                <img src="images/product-11.jpg">
+                <p>Running Shoes</p>
+                <span class="rate_1">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                </span>
+
+                <p>Rs.650</p>
+            </div>
+            <div>
+                <img src="images/product-12.jpg">
+                <p>Black Trouser</p>
+                <span class="rate_1">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                </span>
+
+                <p>Rs.500</p>
+            </div>
+        </div>
+
+       
+    </section>
+    <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594</span>
+    </div>
+ 
+
+    <!--   Footer Section  -->
+
+    <section id="footer">
+        <div class="col-4">
+            <div id="footer-1">
+                <h1 class="center">Download Our App</h1>
+                <p class="center">Download Our App for mobile and ios</p>
+                <img src="images/app-store.png">
+
+                <img src="images/play-store.png">
+            </div>
+
+            <div id="footer-2">
+                <img src="images/logo_transparent.png">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, blanditiis magnam. Expedita sapiente,
+                    consequatur eligendi delectus incidunt.</p>
+            </div>
+            <div id="footer-3">
+                <h3>COMPANY</h3>
+                <ul>
+                    <li>About</li>
+                    <li>Legal</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div id="footer-4">
+                <h3>FOLLOW US</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/insta icon.png" width=40px class="padding">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="images/facebook_icon.png" width=40px class="padding">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="images/twitter icon.png" width=40px class="padding">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="images/youtube icon.png" width=40px class="padding">
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <hr style="border:2px solid white">
+        <p class="center">&copy; 2021 All rights reserved by Apna Store</p>
+    </section>
+ 
+    <script src="index.js"></script>
+
+</body>
+
+</html>
